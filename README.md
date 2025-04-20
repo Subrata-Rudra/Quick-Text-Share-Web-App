@@ -5,7 +5,7 @@
 A lightweight and efficient web application designed for instant text sharing. Whether it's code snippets, notes, or any textual content, share it seamlessly with others via unique links.
 
 ## 💻 Demo
-<img src="./Readme Media/demo.gif" alt="Your Logo" width="100" height="50">
+![Demo GIF](./Readme%20Media/demo.gif)
 
 ## 🚀 Live Demo
 Access the live application here: [quiktext.vercel.app](https://quiktext.vercel.app)
