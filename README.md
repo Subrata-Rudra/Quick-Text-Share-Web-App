@@ -21,7 +21,7 @@ Access the live application here: [quiktext.vercel.app](https://quiktext.vercel.
 ## ✨ Features
 
 - Instantly share text with a unique 4 digit code
-- Clean and intuitive user interfae
+- Clean and intuitive user interface
 - No authentication required for quick sharing
 - Responsive design for all devices
 
