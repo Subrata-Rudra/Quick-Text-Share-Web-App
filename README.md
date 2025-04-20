@@ -16,7 +16,7 @@ Access the live application here: [quiktext.vercel.app](https://quiktext.vercel.
 - **Backend:** Node.js, Express.s
 - **Object Storage:** Cloudinary (for storing text files)
 - **Database:** MongoDB, Redis (for server side caching)
-- **Deployment:** Vercel (Frontend), Render (Backend), Render (Redis), MongoDB Cloud (MongoDB)
+- **Deployment:** Vercel (Frontend), Render (Backend), Cloudinary (Object storage), Render (Redis), MongoDB Cloud (MongoDB)
 
 ## ✨ Features
 
