@@ -90,8 +90,8 @@ Access the live application here: [quiktext.vercel.app](https://quiktext.vercel.
 ## 🧑‍💻 Author
 
 - **Subrata Rudra**
-  - [GitHub](https://github.com/Subrata-udra)
-  - [LinkedIn](https://in.linkedin.com/in/subrata-rudra-b48141b7)
+  - [GitHub](https://github.com/Subrata-Rudra)
+  - [LinkedIn](https://www.linkedin.com/in/subrata-rudra-b481741b7/)
 
 ## 📄 Liense
 
