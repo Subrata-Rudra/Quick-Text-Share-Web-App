@@ -95,7 +95,7 @@ Access the live application here: [quiktext.vercel.app](https://quiktext.vercel.
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LIENSE).
+This project is licensed under the [MIT License](LICENSE).
 
 ## 🌟 Support & Contributions
 
