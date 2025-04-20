@@ -93,7 +93,7 @@ Access the live application here: [quiktext.vercel.app](https://quiktext.vercel.
   - [GitHub](https://github.com/Subrata-Rudra)
   - [LinkedIn](https://www.linkedin.com/in/subrata-rudra-b481741b7/)
 
-## 📄 Liense
+## 📄 License
 
 This project is licensed under the [MIT License](LIENSE).
 
