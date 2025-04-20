@@ -2,7 +2,7 @@
 
 # Quick Text Share Web App
 
-A lightweight and efficient web application designed for instant text sharing. Whether it's code snippets, notes, or any textual content, share it seamlessly with others via unique links.
+A lightweight and efficient web application designed for instant text sharing. Whether it's code snippets, notes, or any textual content, share it seamlessly with others via unique 4 digit code.
 
 ## 💻 Demo
 <img src="./Readme Media/demo.gif" alt="Demo GIF" width="300" height="660">
