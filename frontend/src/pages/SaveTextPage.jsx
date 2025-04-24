@@ -40,6 +40,8 @@ function SaveTextPage() {
   };
 
   const handleSubmit = async () => {
+    document.getElementById("tokenPart").classList.remove("invisible");
+    document.getElementById("loaderIcon").classList.remove("invisible");
     let fileUploadedData = await uploadTextToCloudinary();
 
     if (
@@ -68,6 +70,7 @@ function SaveTextPage() {
       });
 
       const data = await response.json();
+      document.getElementById("loaderIcon").classList.add("invisible");
       if (response.status === 200) {
         setToken(data.token);
         setTextData("");
@@ -78,11 +81,15 @@ function SaveTextPage() {
       console.error("API request failed. ERROR: " + error);
       setErrorMessage(error);
     }
-    document.getElementById("tokenPart").classList.remove("invisible");
+    document.getElementById("copyTokenBtn").classList.remove("invisible");
   };
 
   const goToShowTextPage = () => {
     navigate("/show");
+  };
+
+  const copyTokenToClipboard = () => {
+    navigator.clipboard.writeText(token);
   };
 
   return (
@@ -106,10 +113,22 @@ function SaveTextPage() {
           See Text
         </button>
         <div id="tokenPart" className="invisible">
+          <div id="loaderIcon" className="invisible">
+            <div id="loaderContainer">
+              <div className="loader"></div>
+            </div>
+          </div>
           {errorMessage === "" && (
-            <p>
+            <div>
               Share Token Code: <b>{token}</b>
-            </p>
+              <button
+                id="copyTokenBtn"
+                className="invisible"
+                onClick={copyTokenToClipboard}
+              >
+                Copy
+              </button>
+            </div>
           )}
           {errorMessage !== "" && <p>Error: {errorMessage}</p>}
         </div>

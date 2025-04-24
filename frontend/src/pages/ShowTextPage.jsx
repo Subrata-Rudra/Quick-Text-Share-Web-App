@@ -7,6 +7,7 @@ function ShowTextPage() {
   const navigate = useNavigate();
   const [token, setToken] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [loading, setLoading] = useState(false);
   const [textData, setTextData] = useState("");
 
   useEffect(() => {
@@ -32,6 +33,7 @@ function ShowTextPage() {
   };
 
   const handleSubmit = async () => {
+    setLoading(true);
     const backendServerUrl =
       import.meta.env.VITE_BACKEND_SERVER_URL + "/" + token;
     try {
@@ -54,6 +56,8 @@ function ShowTextPage() {
     } catch (error) {
       console.error("API request to backend failed. ERROR: " + error);
       setErrorMessage(error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -102,6 +106,11 @@ function ShowTextPage() {
         >
           Copy Text
         </button>
+        {loading && (
+          <div id="loaderContainer">
+            <div className="loader"></div>
+          </div>
+        )}
         <div id="textBox" className="invisible"></div>
         <div id="shareTokenBox" className="invisible"></div>
         <div
