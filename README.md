@@ -81,7 +81,7 @@ Access the live application here: [quiktext.vercel.app](https://quiktext.vercel.
    ```bash
    cd ../frontend
    npm run dev
-   ``
+   ```
    The frontend will run on `http://localhost:5173`.
 
 3. **Access the application:**
